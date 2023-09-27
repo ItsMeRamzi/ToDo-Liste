@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Die Schrift -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&displayswap" rel="stylesheet">
+
+        <!-- Animated Icons -->
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+        <title>ToDo-Liste</title>
+    </head>
+    <body>
+        <div id="introSection">
+            <h1>ToDo-Liste</h1>
+        </div>
+        <div id="container">
+            <div id="categorySection"> 
+                <p class="textS">Was möchtest du hinzufügen?</p>
+                <button id="taskCategoryButton" class="categoryClicked">Aufgabe</button>
+                <button id="appointmentCategoryButton">Termin</button>
+            </div>
+            <div id="userSection">
+                <input id="userInput" class="userInputS" type="text" placeholder="Neue Aufgabe..." maxlength="100">
+                <button id="userSubmit" class="userSubmitS"><lord-icon
+                    src="https://cdn.lordicon.com/jxwksgwv.json"
+                    trigger="click"
+                    colors="primary:#FC427B"
+                    style="width:45px;height:45px">
+                </lord-icon></button>
+            </div>
+            <div id="taskSection">
+                <ul id="taskList">
+                    <!-- Hier werden die Aufgaben vom Nutzer hinzugefügt -->
+                </ul>
+            </div>
+            <div id="helpSection">
+                <h3><lord-icon
+                    id="helpTextArrow"
+                    src="https://cdn.lordicon.com/albqovim.json"
+                    trigger="hover"
+                    colors="primary:#FC427B"
+                    style="width:45px;height:45px">
+                    </lord-icon></h3>
+                <div id="helpText" class="hidden">
+                    <p>Such dir eine Kategorie aus, in der deine Aufgabe untergeteilt werden sollte.</p>
+                    <p>Gib Text im Eingabefeld ein und drücke Enter oder den Pfeil, um Aufgaben zur Liste hinzuzufügen.</p>
+                    <p>Klicke auf eine Aufgabe, um sie als erledigt zu markieren.</p>
+                    <p>Klick auf das Mülleimer, um die Aufgabe aus der Liste zu entfernen.</p>
+                </div>
+            </div>
+        </div>
+        <span id="trashIcon" class="hidden"><lord-icon
+            src="https://cdn.lordicon.com/jmkrnisz.json"
+            trigger="hover"
+            colors="primary:#FC427B"
+            style="width:45px;height:45px">
+        </lord-icon></span>
+        <script src="script.js"></script>
+    </body>
+</html>

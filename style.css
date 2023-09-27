@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.15s;
+    font-family: "Exo 2";
+}
+
+/* Struktur der Website */
+
+body {
+    background: #F8EFBA;
+    user-select: none;
+    -webkit-user-select: none;
+    min-width: 500px;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#introSection {
+    margin: 20px;
+}
+#introSection h1 {
+    margin: auto;
+    margin-bottom: 100px;
+    width: max-content;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 5px #FC427B solid;
+    text-shadow: 0 0 5px #FC427B;
+    border-radius: 0 0 10px 10px;
+}
+
+#categorySection {
+    margin: 20px;
+}
+#categorySection > p {
+    margin: 20px;
+    font-size: 25px;
+}
+#categorySection button {
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    border: 3px #FC427B solid;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 20px;
+    box-shadow: 0 0 5px #000;
+}
+#categorySection button:hover {
+    background: #F8EFBA;
+}
+#categorySection button:active {
+    color: #fff;
+    box-shadow: 0 0 0 #000;
+    text-shadow: 0 0 5px #000;
+}
+.categoryClicked {
+    color: #fff;
+    background: #FC427B !important;
+    box-shadow: 0 0 0 #000 !important;
+    text-shadow: 0 0 1px #000;
+    font-style: italic;
+}
+
+#userSection {
+    margin: 20px;
+    padding: 50px;
+}
+#userInput{
+    width: 80%;
+    height: 50px;
+    padding: 5px;
+    border: 3px #FC427B solid;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 20px;
+}
+#userInput:hover {
+    background: #F8EFBA;
+}
+#userSubmit{
+    width: 10%;
+    height: 50px;
+    padding: 0px;
+    border: 3px #FC427B solid;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 20px;
+    transform: translateY(15px);
+}
+#userSubmit:hover {
+    background: #F8EFBA;
+}
+
+#taskSection {
+    margin: 20px;    
+}
+#taskList {
+    margin: 20px 0;
+}
+#taskList li {
+    margin: 20px;
+    list-style: none;
+    border: 3px #FC427B solid;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 20px;
+    padding: 20px 60px 20px 150px;
+    text-align: left;
+    overflow-wrap: break-word;
+    position: relative;
+}
+#taskList li:hover {
+    background: #F8EFBA;
+    cursor: pointer;
+}
+.categoryTextDivStyle {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    height: 100%;
+    width: 150px;
+    font-size: 30px;
+    color: rgb(100, 100, 100, .8);
+    background: #fff;
+}
+.categoryTextStyle {
+    border: none;
+    padding: 10px;
+    position: absolute;
+    font-size: 30px;
+    color: rgb(100, 100, 100, .8);
+    background: #fff;
+    border-radius: 30px;
+}
+.categoryTextHover {
+    font-size: 31px !important;
+    color: #fff;
+    background: #F8EFBA;
+}
+.deleteButtonStyle {
+    border: none;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0; 
+    height: 100%;
+    width: 60px;
+    font-size: 30px;
+    color: #FC427B;
+    background: #fff;
+}
+.deleteButtonStyle:hover {
+    background: #F8EFBA;
+}
+
+#helpSection {
+    margin: 20px;
+    background: rgb(255, 255, 255, .8);
+    border-radius: 5px;
+    padding: 20px 0px;
+}
+#helpSection:active {
+    background: #fff;
+    padding: 15px 0px;
+}
+#helpText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0, .5);
+    margin: auto;
+}
+#helpText p {
+    background: rgb(100, 100, 100, .1);
+    margin: 5px 15%;
+    border-radius: 5px;
+}
+
+/* Speziell */
+button {
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.done {
+   background: #bdc3c7 !important;
+   font-style: italic;
+   color: #fff;
+}
+.lineThrough {
+    text-decoration: line-through red;
+}
+
+/* Media */
+@media only screen and (max-width: 530px) {
+    .categoryTextStyleS {
+        font-size: 20px !important;
+    }
+    .categoryTextS {
+        width: 100px !important;
+    }
+    .taskTextS {
+        padding-left: 100px !important;
+    }
+}
+@media only screen and (max-width: 830px) {
+    .userSubmitS {
+        width: 100% !important;
+    }
+    .userInputS {
+        width: 100% !important;
+    }
+}
