@@ -54,7 +54,7 @@ body {
     box-shadow: 0 0 5px #000;
 }
 #categorySection button:hover {
-    background: #F8EFBA;
+    background: #6464641a;
 }
 #categorySection button:active {
     color: #fff;
@@ -62,6 +62,8 @@ body {
     text-shadow: 0 0 5px #000;
 }
 .categoryClicked {
+    width:199px !important;
+    height: 48px !important;
     color: #fff;
     background: #FC427B !important;
     box-shadow: 0 0 0 #000 !important;
@@ -83,7 +85,7 @@ body {
     font-size: 20px;
 }
 #userInput:hover {
-    background: #F8EFBA;
+    background: #6464641a;
 }
 #userSubmit{
     width: 10%;
@@ -96,7 +98,7 @@ body {
     transform: translateY(15px);
 }
 #userSubmit:hover {
-    background: #F8EFBA;
+    background: #6464641a;
 }
 
 #taskSection {
@@ -118,7 +120,7 @@ body {
     position: relative;
 }
 #taskList li:hover {
-    background: #F8EFBA;
+    background: #6464641a;
     cursor: pointer;
 }
 .categoryTextDivStyle {
@@ -149,7 +151,7 @@ body {
 .categoryTextHover {
     font-size: 31px !important;
     color: #fff;
-    background: #F8EFBA;
+    background: #6464641a;
 }
 .deleteButtonStyle {
     border: none;
@@ -164,7 +166,7 @@ body {
     background: #fff;
 }
 .deleteButtonStyle:hover {
-    background: #F8EFBA;
+    background: #6464641a;
 }
 
 #helpSection {
@@ -188,7 +190,30 @@ body {
     margin: 5px 15%;
     border-radius: 5px;
 }
-
+#backgroundColor p {
+    background: none;
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+    color: #000;
+}
+#backgroundColor button {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    border: 3px #FC427B solid;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 15px;
+    box-shadow: 0 0 5px #000;
+}
+#backgroundColor button:hover {
+    background: #6464641a;
+}
+#backgroundColor button:active {
+    color: #fff;
+    box-shadow: 0 0 0 #000;
+    text-shadow: 0 0 5px #000;
+}
 /* Speziell */
 button {
     cursor: pointer;
