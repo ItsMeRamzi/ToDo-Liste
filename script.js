@@ -94,6 +94,9 @@ theme1.addEventListener("click", function() {
     theme1.classList.add("categoryClicked");
     theme2.classList.remove("categoryClicked");
     theme3.classList.remove("categoryClicked");
+    theme4.classList.remove("categoryClicked");
+    theme5.classList.remove("categoryClicked");
+    theme6.classList.remove("categoryClicked");
     document.body.style.backgroundColor = "#F8EFBA";
 });
 theme2.addEventListener("click", function() {
